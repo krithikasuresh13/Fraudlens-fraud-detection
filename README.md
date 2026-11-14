@@ -59,10 +59,3 @@ Reported evaluation metrics against the included labels:
 
 These results are specific to the included synthetic data and should not be interpreted as real-world fraud detection performance.
 
-## Limitations
-
-The system is a demonstration project, not a production-ready banking fraud detection service. Performance must be validated on independent, representative, labelled transaction data before real-world use.
-
-## Disclaimer
-
-Use only authorized datasets. Do not commit sensitive customer information, credentials, or confidential financial records.
