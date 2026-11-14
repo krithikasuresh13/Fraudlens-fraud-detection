@@ -62,10 +62,3 @@ ring hunting, peak-risk hours, analyst false-positive rate per rule.
    matrix `vw_hourly_pattern` weekday × hour with `Hourly Alert Rate` as heat-map · bar chart of `vw_rule_effectiveness` hits by `rule_id` ·
    table from `vw_case_queue` sorted by `priority` · slicer on `tier`.
 
-## Known limits 
-
-* **Baselines use each customer's whole history** (batch screening). A live system must use *prior-only* rolling baselines to avoid look-ahead.
-* Customers with < 8 transactions fall back to the population baseline, so new accounts are scored more coarsely.
-* Rules are thresholds I chose (`engine.py`, `RULES` and `apply_rules`); validate them against your confirmed-fraud history.
-* The Isolation Forest is unsupervised. With labelled history, add a supervised model (e.g. gradient boosting) and compare.
-* This is decision support for analysts, not an automatic block/decline engine.
