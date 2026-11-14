@@ -1,4 +1,4 @@
-#  FraudLens — explainable suspicious-transaction screening
+#  FraudLens 
 
 Finds unusual financial transactions, explains *why* each one is suspicious, groups alerts into cases, and ranks the cases
 by **risk × money at stake** so analysts work the right thing first.
