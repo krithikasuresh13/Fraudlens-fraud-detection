@@ -1,0 +1,72 @@
+﻿run_id,case_id,customer_id,start_ts,end_ts,n_alerts,total_amount,case_risk,priority,rules,top_reason,status
+1,CASE-0001,C0280,2026-09-23 21:25:21,2026-09-23 21:34:09,9,83758.53,100.0,492.3,"ML_ANOMALY, VELOCITY_BURST",8 transactions within 10 minutes,open
+1,CASE-0002,C0280,2026-08-12 08:04:25,2026-08-12 08:11:06,8,63474.2,97.8,469.7,"ML_ANOMALY, VELOCITY_BURST",6 transactions within 10 minutes,open
+1,CASE-0003,C0197,2026-08-01 20:11:06,2026-08-01 20:16:40,7,55357.22,94.3,447.3,"ML_ANOMALY, VELOCITY_BURST",7 transactions within 10 minutes,open
+1,CASE-0004,C0065,2026-08-12 16:41:36,2026-08-12 16:48:54,9,27105.2,99.7,442.0,"ML_ANOMALY, VELOCITY_BURST",7 transactions within 10 minutes,open
+1,CASE-0005,C0035,2026-08-01 12:28:43,2026-08-01 12:36:12,9,18743.86,100.0,427.3,"ML_ANOMALY, VELOCITY_BURST",9 transactions within 10 minutes,open
+1,CASE-0006,C0079,2026-08-14 22:06:00,2026-08-14 22:06:00,1,36419.61,85.7,390.9,"IMPOSSIBLE_TRAVEL, ML_ANOMALY","1,179 km from the previous transaction after 33 min (~2,143 km/h)",open
+1,CASE-0007,C0290,2026-08-27 12:00:07,2026-08-27 12:12:17,5,7849.4,100.0,389.5,"AMOUNT_SPIKE, CARD_TEST_BURST, CARD_TEST_CASHOUT, ML_ANOMALY, NEW_DEVICE_HIGH","₹7,820 is 17.9x this customer's typical ₹438 (z=5.3)",open
+1,CASE-0008,C0275,2026-09-14 14:43:05,2026-09-14 14:56:42,5,6896.58,100.0,383.9,"CARD_TEST_BURST, CARD_TEST_CASHOUT, ML_ANOMALY, NEW_DEVICE_HIGH","₹6,871 shortly after a card-testing burst",open
+1,CASE-0009,C0153,2026-08-02 08:59:00,2026-08-02 08:59:00,1,85929.31,77.3,381.4,"AMOUNT_SPIKE, ML_ANOMALY, NEW_DEVICE_HIGH","₹85,929 is 28.3x this customer's typical ₹3,033 (z=4.7)",open
+1,CASE-0010,C0008,2026-09-07 20:04:00,2026-09-07 20:04:00,1,78708.99,75.6,370.1,"AMOUNT_SPIKE, ML_ANOMALY, NEW_DEVICE_HIGH","₹78,709 is 21.3x this customer's typical ₹3,703 (z=6.0)",open
+1,CASE-0011,C0015,2026-09-21 13:46:14,2026-09-21 13:59:30,7,4314.95,100.0,363.6,"CARD_TEST_BURST, CARD_TEST_CASHOUT, ML_ANOMALY, VELOCITY_BURST",5 transactions within 10 minutes,open
+1,CASE-0012,C0155,2026-09-11 19:31:24,2026-09-11 19:45:39,7,4099.79,100.0,361.4,"CARD_TEST_BURST, CARD_TEST_CASHOUT, ML_ANOMALY, VELOCITY_BURST",5 transactions within 10 minutes,open
+1,CASE-0013,C0274,2026-08-17 22:51:45,2026-08-17 22:57:13,6,9082.84,91.0,360.2,"ML_ANOMALY, VELOCITY_BURST",6 transactions within 10 minutes,open
+1,CASE-0014,C0191,2026-09-07 11:16:00,2026-09-07 11:16:00,1,42109.02,77.6,358.9,"AMOUNT_SPIKE, ML_ANOMALY, NEW_DEVICE_HIGH","₹42,109 is 17.6x this customer's typical ₹2,393 (z=4.9)",open
+1,CASE-0015,C0078,2026-09-21 08:43:54,2026-09-21 08:54:59,7,3857.02,100.0,358.7,"CARD_TEST_BURST, CARD_TEST_CASHOUT, ML_ANOMALY, VELOCITY_BURST",5 transactions within 10 minutes,open
+1,CASE-0016,C0123,2026-07-30 09:56:57,2026-07-30 10:07:10,6,3700.46,100.0,356.9,"CARD_TEST_BURST, CARD_TEST_CASHOUT, ML_ANOMALY, NEW_DEVICE_HIGH, VELOCITY_BURST",5 transactions within 10 minutes,open
+1,CASE-0017,C0181,2026-08-21 14:48:16,2026-08-21 14:52:28,6,7783.34,90.3,351.4,"ML_ANOMALY, VELOCITY_BURST",5 transactions within 10 minutes,open
+1,CASE-0018,C0139,2026-09-05 15:51:00,2026-09-05 15:51:00,1,33530.05,76.8,347.6,"AMOUNT_SPIKE, ML_ANOMALY, NEW_DEVICE_HIGH","₹33,530 is 29.5x this customer's typical ₹1,135 (z=5.8)",open
+1,CASE-0019,C0037,2026-09-15 03:35:00,2026-09-15 03:45:00,2,25137.59,78.2,344.1,"AMOUNT_SPIKE, ML_ANOMALY, ODD_HOUR_HIGH","₹11,690 is 10.4x this customer's typical ₹1,129 (z=4.1)",open
+1,CASE-0020,C0120,2026-08-22 12:03:00,2026-08-22 12:03:00,1,23260.91,78.2,341.5,"AMOUNT_SPIKE, ML_ANOMALY, NEW_DEVICE_HIGH","₹23,261 is 20.7x this customer's typical ₹1,121 (z=5.4)",open
+1,CASE-0021,C0007,2026-09-24 18:09:00,2026-09-24 18:09:00,1,5813.91,90.7,341.5,"AMOUNT_SPIKE, IMPOSSIBLE_TRAVEL, ML_ANOMALY","₹5,814 is 6.6x this customer's typical ₹880 (z=5.7)",open
+1,CASE-0022,C0031,2026-08-11 18:40:00,2026-08-11 18:40:00,1,29995.36,76.0,340.3,"AMOUNT_SPIKE, ML_ANOMALY, NEW_DEVICE_HIGH","₹29,995 is 35.4x this customer's typical ₹847 (z=5.8)",open
+1,CASE-0023,C0058,2026-09-03 11:52:00,2026-09-03 11:52:00,1,5567.89,90.6,339.4,"AMOUNT_SPIKE, IMPOSSIBLE_TRAVEL, ML_ANOMALY","₹5,568 is 6.4x this customer's typical ₹870 (z=4.2)",open
+1,CASE-0024,C0157,2026-09-20 15:48:00,2026-09-20 15:48:00,1,5341.3,90.5,337.4,"AMOUNT_SPIKE, IMPOSSIBLE_TRAVEL, ML_ANOMALY","₹5,341 is 6.4x this customer's typical ₹830 (z=6.7)",open
+1,CASE-0025,C0201,2026-08-11 19:10:50,2026-08-11 19:16:06,6,5535.22,89.8,336.2,"ML_ANOMALY, VELOCITY_BURST",6 transactions within 10 minutes,open
+1,CASE-0026,C0037,2026-08-28 19:24:00,2026-08-28 20:22:07,2,18483.84,78.0,332.8,"AMOUNT_SPIKE, FIRST_FOREIGN, IMPOSSIBLE_TRAVEL, ML_ANOMALY","2,056 km from the previous transaction after 58 min (~2,123 km/h)",open
+1,CASE-0027,C0240,2026-09-12 20:41:00,2026-09-12 20:41:00,1,21910.15,75.8,329.0,"AMOUNT_SPIKE, ML_ANOMALY, NEW_DEVICE_HIGH","₹21,910 is 15.6x this customer's typical ₹1,406 (z=4.8)",open
+1,CASE-0028,C0215,2026-08-08 15:32:00,2026-08-08 15:32:00,1,28130.27,73.3,326.1,"AMOUNT_SPIKE, FIRST_FOREIGN, ML_ANOMALY","₹28,130 is 13.0x this customer's typical ₹2,156 (z=4.8)",open
+1,CASE-0029,C0094,2026-09-26 10:56:00,2026-09-26 10:56:00,1,5868.67,85.6,322.7,"IMPOSSIBLE_TRAVEL, ML_ANOMALY","1,358 km from the previous transaction after 26 min (~3,135 km/h)",open
+1,CASE-0030,C0118,2026-08-11 20:04:00,2026-08-11 20:04:00,1,20996.66,73.1,316.0,"AMOUNT_SPIKE, FIRST_FOREIGN, ML_ANOMALY","₹20,997 is 11.8x this customer's typical ₹1,773 (z=4.6)",open
+1,CASE-0031,C0253,2026-08-14 17:10:00,2026-08-14 17:10:00,1,4899.91,85.2,314.5,"IMPOSSIBLE_TRAVEL, ML_ANOMALY","914 km from the previous transaction after 35 min (~1,567 km/h)",open
+1,CASE-0032,C0168,2026-08-31 20:04:00,2026-08-31 20:04:00,1,4606.21,85.2,312.2,"IMPOSSIBLE_TRAVEL, ML_ANOMALY","1,142 km from the previous transaction after 26 min (~2,634 km/h)",open
+1,CASE-0033,C0086,2026-09-21 03:08:00,2026-09-21 03:18:00,2,40016.27,66.7,307.0,"ML_ANOMALY, ODD_HOUR_HIGH",03:xx - customer rarely transacts at night; amount z=3.9,open
+1,CASE-0034,C0184,2026-08-06 04:22:00,2026-08-06 04:22:00,1,16512.92,72.4,305.4,"AMOUNT_SPIKE, ML_ANOMALY, ODD_HOUR_HIGH","₹16,513 is 13.9x this customer's typical ₹1,188 (z=4.5)",open
+1,CASE-0035,C0100,2026-09-18 16:42:40,2026-09-18 16:42:40,1,74142.31,61.0,297.1,"AMOUNT_SPIKE, ML_ANOMALY","₹74,142 is 20.7x this customer's typical ₹3,584 (z=5.6)",open
+1,CASE-0036,C0008,2026-07-17 18:42:11,2026-07-17 18:42:11,1,20151.39,68.8,296.2,"ML_ANOMALY, NEW_DEVICE_HIGH",first use of device D-C0008-2 with an unusually high amount (z=3.3),open
+1,CASE-0037,C0241,2026-08-10 17:37:00,2026-08-10 17:37:00,1,5356.8,76.1,283.8,"ML_ANOMALY, NEW_DEVICE_HIGH, SHARED_DEVICE",first use of device D-RING-01 with an unusually high amount (z=3.1),open
+1,CASE-0038,C0249,2026-09-21 04:37:00,2026-09-21 04:37:00,1,14198.62,61.3,254.6,"ML_ANOMALY, ODD_HOUR_HIGH",04:xx - customer rarely transacts at night; amount z=3.7,open
+1,CASE-0039,C0290,2026-08-17 16:57:00,2026-08-17 16:57:00,1,4349.85,68.5,249.3,"AMOUNT_SPIKE, FIRST_FOREIGN, ML_ANOMALY","₹4,350 is 9.9x this customer's typical ₹438 (z=4.2)",open
+1,CASE-0040,C0130,2026-08-30 12:11:00,2026-08-30 12:11:00,1,1820.83,72.5,236.5,"NEW_DEVICE_HIGH, SHARED_DEVICE",first use of device D-RING-01 with an unusually high amount (z=2.5),open
+1,CASE-0041,C0283,2026-07-19 19:36:37,2026-07-19 19:36:37,1,6732.6,55.1,211.0,"AMOUNT_SPIKE, ML_ANOMALY","₹6,733 is 14.5x this customer's typical ₹463 (z=5.8)",open
+1,CASE-0042,C0286,2026-08-21 04:07:00,2026-08-21 04:07:00,1,2614.81,59.6,203.8,"AMOUNT_SPIKE, ML_ANOMALY","₹2,615 is 7.9x this customer's typical ₹333 (z=4.3)",open
+1,CASE-0043,C0167,2026-09-01 09:40:58,2026-09-01 09:40:58,1,16374.97,47.3,199.3,"AMOUNT_SPIKE, ML_ANOMALY","₹16,375 is 7.4x this customer's typical ₹2,209 (z=4.5)",open
+1,CASE-0044,C0241,2026-09-28 15:10:00,2026-09-28 15:10:00,1,4591.72,50.0,183.1,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0045,C0129,2026-08-20 20:17:00,2026-08-20 20:17:00,1,4474.79,50.1,183.0,"FIRST_FOREIGN, ML_ANOMALY",first transaction ever in GB (home country IN),open
+1,CASE-0046,C0094,2026-08-26 16:30:00,2026-08-26 16:30:00,1,3472.86,50.0,177.1,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0047,C0094,2026-08-26 12:10:00,2026-08-26 12:10:00,1,2927.74,50.0,173.4,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0048,C0087,2026-08-01 08:44:24,2026-08-01 08:44:24,1,4333.33,47.0,171.0,"AMOUNT_SPIKE, ML_ANOMALY","₹4,333 is 9.1x this customer's typical ₹479 (z=4.6)",open
+1,CASE-0049,C0094,2026-08-11 17:50:00,2026-08-11 17:50:00,1,2445.41,50.0,169.5,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0050,C0148,2026-09-13 03:19:00,2026-09-13 03:19:00,1,9659.28,41.7,166.2,ML_ANOMALY,"statistically unusual vs. all transactions: amount vs. customer norm (high), time since last transaction (low) (top 0.5%)",open
+1,CASE-0051,C0274,2026-08-14 11:46:00,2026-08-14 11:46:00,1,2012.37,50.0,165.3,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0052,C0274,2026-09-20 13:05:00,2026-09-20 13:05:00,1,1958.73,50.0,164.7,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0053,C0124,2026-07-25 09:34:47,2026-07-25 09:34:47,1,8313.72,40.3,158.0,ML_ANOMALY,"statistically unusual vs. all transactions: amount vs. customer norm (high), transaction frequency (high) (top 0.6%)",open
+1,CASE-0054,C0235,2026-09-03 19:18:00,2026-09-03 19:18:00,1,1421.12,50.0,157.8,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0055,C0235,2026-09-19 15:07:00,2026-09-19 15:07:00,1,1401.31,50.0,157.5,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0056,C0274,2026-09-09 16:09:00,2026-09-09 16:09:00,1,1268.52,50.0,155.3,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0057,C0130,2026-09-17 13:50:00,2026-09-17 13:50:00,1,1266.94,50.0,155.3,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0058,C0036,2026-09-02 19:50:03,2026-09-02 19:50:03,1,4326.83,41.9,152.4,ML_ANOMALY,"statistically unusual vs. all transactions: distance from home (high), time since last transaction (low) (top 0.5%)",open
+1,CASE-0059,C0264,2026-08-11 19:05:00,2026-08-11 19:05:00,1,858.97,50.0,147.0,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0060,C0235,2026-08-16 19:19:00,2026-08-16 19:19:00,1,821.51,50.0,146.0,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0061,C0264,2026-09-08 11:48:00,2026-09-08 11:48:00,1,797.99,50.0,145.4,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0062,C0178,2026-07-15 17:58:13,2026-07-15 17:58:13,1,3750.97,40.4,144.4,ML_ANOMALY,"statistically unusual vs. all transactions: transaction frequency (high), time since last transaction (low) (top 0.6%)",open
+1,CASE-0063,C0224,2026-09-25 11:25:50,2026-09-25 11:25:50,1,2739.86,41.4,142.4,ML_ANOMALY,"statistically unusual vs. all transactions: time since last transaction (low), transaction frequency (high) (top 0.5%)",open
+1,CASE-0064,C0264,2026-09-04 18:12:00,2026-09-04 18:12:00,1,581.31,50.0,138.6,SHARED_DEVICE,device D-RING-01 is used by 6 different customers,open
+1,CASE-0065,C0159,2026-08-15 21:04:29,2026-08-15 21:04:29,1,1205.5,40.7,125.5,ML_ANOMALY,"statistically unusual vs. all transactions: distance from home (high), transaction frequency (high) (top 0.6%)",open
+1,CASE-0066,C0093,2026-09-13 20:34:41,2026-09-13 20:34:41,1,1018.7,41.1,123.8,ML_ANOMALY,"statistically unusual vs. all transactions: new device (high), distance from home (high) (top 0.5%)",open
+1,CASE-0067,C0199,2026-07-21 23:46:59,2026-07-21 23:46:59,1,476.98,40.1,107.8,ML_ANOMALY,"statistically unusual vs. all transactions: time since last transaction (low), transaction frequency (high) (top 0.6%)",open
+1,CASE-0068,C0172,2026-08-21 11:06:54,2026-08-21 11:06:54,1,216.31,41.8,98.4,ML_ANOMALY,"statistically unusual vs. all transactions: time since last transaction (low), transaction frequency (high) (top 0.5%)",open
+1,CASE-0069,C0158,2026-07-22 16:59:51,2026-07-22 16:59:51,1,117.01,44.1,92.8,ML_ANOMALY,"statistically unusual vs. all transactions: distance from home (high), transaction frequency (high) (top 0.4%)",open
+1,CASE-0070,C0134,2026-08-22 20:30:49,2026-08-22 20:30:49,1,132.91,40.6,87.5,ML_ANOMALY,"statistically unusual vs. all transactions: transaction frequency (high), time since last transaction (low) (top 0.6%)",open
+1,CASE-0071,C0089,2026-08-20 20:51:05,2026-08-20 20:51:05,1,43.33,42.5,73.4,ML_ANOMALY,"statistically unusual vs. all transactions: time since last transaction (low), amount (low) (top 0.4%)",open

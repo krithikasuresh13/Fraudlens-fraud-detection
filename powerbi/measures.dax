@@ -1,0 +1,47 @@
+// FraudLens - starter DAX measures
+// Load the CSVs as tables. Relationships (all many-to-one on run_id are handled by a single Run slicer):
+//   vw_transactions[case_id] -> vw_case_queue[case_id]   (many-to-one; add run_id to both as a composite key column if you load several runs)
+// Keep one run in the model, or add a slicer on run_id.
+
+Transactions = COUNTROWS ( vw_transactions )
+
+Alerts = CALCULATE ( COUNTROWS ( vw_transactions ), vw_transactions[is_alert] = 1 )
+
+Alert Rate % = DIVIDE ( [Alerts], [Transactions] )
+
+Amount Flagged = CALCULATE ( SUM ( vw_transactions[amount] ), vw_transactions[is_alert] = 1 )
+
+High-Risk Transactions = CALCULATE ( COUNTROWS ( vw_transactions ), vw_transactions[tier] = "High" )
+
+Open Cases = CALCULATE ( COUNTROWS ( vw_case_queue ), vw_case_queue[status] = "open" )
+
+Confirmed Fraud Cases = CALCULATE ( COUNTROWS ( vw_case_queue ), vw_case_queue[status] = "confirm_fraud" )
+
+False Positive Cases = CALCULATE ( COUNTROWS ( vw_case_queue ), vw_case_queue[status] = "false_positive" )
+
+// Analyst-confirmed precision (only meaningful once cases have been reviewed)
+Reviewed Precision =
+DIVIDE (
+    [Confirmed Fraud Cases],
+    [Confirmed Fraud Cases] + [False Positive Cases]
+)
+
+// Only for labelled data (is_fraud present)
+Precision vs Labels =
+DIVIDE (
+    CALCULATE ( COUNTROWS ( vw_transactions ), vw_transactions[is_alert] = 1, vw_transactions[is_fraud] = 1 ),
+    [Alerts]
+)
+
+Recall vs Labels =
+DIVIDE (
+    CALCULATE ( COUNTROWS ( vw_transactions ), vw_transactions[is_alert] = 1, vw_transactions[is_fraud] = 1 ),
+    CALCULATE ( COUNTROWS ( vw_transactions ), vw_transactions[is_fraud] = 1 )
+)
+
+// Heat-map helper for the hour x weekday matrix (vw_hourly_pattern)
+Hourly Alert Rate = DIVIDE ( SUM ( vw_hourly_pattern[alerts] ), SUM ( vw_hourly_pattern[transactions] ) )
+
+Weekday Name =
+SWITCH ( MAX ( vw_hourly_pattern[weekday_no] ),
+    0, "Sun", 1, "Mon", 2, "Tue", 3, "Wed", 4, "Thu", 5, "Fri", 6, "Sat" )
