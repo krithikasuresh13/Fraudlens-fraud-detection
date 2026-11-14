@@ -52,7 +52,7 @@ weight (0.35) by looking at this data. Real fraud is messier — expect lower nu
 `sql/analysis_queries.sql` work queue, rule scorecard, 7-day moving average (window function), repeat offenders,
 ring hunting, peak-risk hours, analyst false-positive rate per rule.
 
-## Power BI (5 minutes)
+## Power BI 
 
 1. In the app's **Export** tab click *Save run to SQLite + build Power BI pack* (or run `run_demo.py`) and unzip.
 2. Power BI Desktop → **Get data → Text/CSV** → load the `vw_*.csv` files (keep one run in the model, or slicer on `run_id`).
@@ -62,7 +62,7 @@ ring hunting, peak-risk hours, analyst false-positive rate per rule.
    matrix `vw_hourly_pattern` weekday × hour with `Hourly Alert Rate` as heat-map · bar chart of `vw_rule_effectiveness` hits by `rule_id` ·
    table from `vw_case_queue` sorted by `priority` · slicer on `tier`.
 
-## Known limits (before using on real money)
+## Known limits 
 
 * **Baselines use each customer's whole history** (batch screening). A live system must use *prior-only* rolling baselines to avoid look-ahead.
 * Customers with < 8 transactions fall back to the population baseline, so new accounts are scored more coarsely.
